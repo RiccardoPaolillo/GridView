@@ -27,13 +27,6 @@
     [gridView reloadData];
     
     [self.container refreshContentSize];
-    
-    
-    AVSpeechSynthesizer *synthesizer = [AVSpeechSynthesizer new];
-    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:@"Cristina sto facendo parlare il mio mac!"];
-    utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"it-IT"];
-    [utterance setRate:0.2f];
-    [synthesizer speakUtterance:utterance];
 }
 
 - (void)didReceiveMemoryWarning
